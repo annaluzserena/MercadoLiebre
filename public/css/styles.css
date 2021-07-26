@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    width: 100vw;
 }
 
 a {
@@ -57,6 +58,10 @@ nav {
     border-style: none;
 }
 
+#search:focus {
+    border-style: none;
+}
+
 .buscar {
     width: 10%;
     order: 2;
@@ -104,6 +109,7 @@ main {
 
 h3 {
     font-size: 24px;
+    margin: 10px auto;
 }
 
 main section {
@@ -175,6 +181,7 @@ main section article div {
 }
 
 footer {
+    width: 100vw;
     background-color: white;
     margin: 5px;
     padding: 30px;
@@ -184,11 +191,12 @@ footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 #footer-sections section {
-    width: 30%;
+    width: 80%;
     text-align: center;
     margin: 20px auto;
 }
@@ -319,5 +327,13 @@ footer p {
 
     header div input {
         border-radius: 0;
+    }
+
+    #footer-sections {
+        flex-direction: row;
+    }
+
+    #footer-sections section {
+        width: 30%;
     }
 }
