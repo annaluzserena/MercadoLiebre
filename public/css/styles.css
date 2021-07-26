@@ -287,14 +287,8 @@ footer p {
 
     .descripcion {
         opacity: 0%;
-        transition: opacity 1s;
-    }
-
-    .descripcion:hover {
-        opacity: 100%;
-        align-self: flex-end;
-        color: #666;
 }
+
 
 }
 
@@ -316,12 +310,24 @@ footer p {
 
     main section article {
         width: 20%;
+        box-shadow: 0;
         transition: box-shadow 1s;
     }
 
     main section article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .descripcion {
+        opacity: 0%;
+        transition: opacity 1s;
+    }
+
+    .descripcion:hover {
+        opacity: 100%;
+        align-self: flex-end;
+        color: #666;
+}
 
     header div input {
         border-radius: 0;
