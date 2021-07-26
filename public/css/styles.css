@@ -310,7 +310,7 @@ footer p {
 
     main section article {
         width: 20%;
-        box-shadow: 0;
+        box-shadow: none;
         transition: box-shadow 1s;
     }
 
