@@ -52,33 +52,33 @@
             <h3>Creá tu cuenta</h3>
 
             <label for="nombre" class="label-reg"></label>
-            <input type="text" name="nombre" id="nombre" class="input-reg" placeholder="Nombre completo">
+            <input type="text" name="nombre" id="nombre" class="input-reg" placeholder="Nombre completo" required>
             <span class="feedback"></span>
 
             <label for="usuario" class="label-reg"></label>
-            <input type="text" name="usuario" id="usuario" class="input-reg" placeholder="Usuario">
+            <input type="text" name="usuario" id="usuario" class="input-reg" placeholder="Usuario" required>
             <span class="feedback"></span>
 
             <label for="email" class="label-reg"></label>
-            <input type="email" name="email" id="email" class="input-reg" placeholder="Email">
+            <input type="email" name="email" id="email" class="input-reg" placeholder="Email" required>
             <span class="feedback"></span>
 
             <label for="birthDate" class="label-reg">Fecha de nacimiento:</label>
-            <input type="date" name="birthDate" id="birthDate" class="input-reg">
+            <input type="date" name="birthDate" id="birthDate" class="input-reg" required>
             <span class="feedback"></span>
 
             <label for="domicilio" class="label-reg"></label>
-            <input type="text" name="domicilio" id="domicilio" class="input-reg" placeholder="Domicilio">
+            <input type="text" name="domicilio" id="domicilio" class="input-reg" placeholder="Domicilio" required>
             <span class="feedback"></span>
 
             <label for="perfilUsuario">Perfil del usuario:</label>
             <div id="perfilUsuario">
                 <div class="radio">
-                    <input type="radio" name="perfilUsuario" class="perfilUsuario input-reg">
+                    <input type="radio" name="perfilUsuario" class="perfilUsuario input-reg" required>
                     <p>Comprador</p>
                 </div>
                 <div class="radio">
-                    <input type="radio" name="perfilUsuario" class="perfilUsuario input-reg">
+                    <input type="radio" name="perfilUsuario" class="perfilUsuario input-reg" required>
                     <p>Vendedor</p>
                 </div>
             </div>
@@ -108,13 +108,13 @@
             </div>
 
             <label for="fotoUsuario" class="label-reg">Foto de perfil:</label>
-            <input type="file" accept=".jpg, .png" name="fotoUsuario" id="fotoUsuario" class="input-reg">
+            <input type="file" accept=".jpg, .png" name="fotoUsuario" id="fotoUsuario" class="input-reg" required>
             <span class="feedback"></span>
 
             <label for="password" class="label-reg"></label>
-            <input type="password" name="password" class="password input-reg" placeholder="Contraseña">
+            <input type="password" name="password" class="password input-reg" placeholder="Contraseña" required>
             <span class="feedback"></span>
-            <input type="password" name="password" class="password input-reg" placeholder="Confirmar contraseña">
+            <input type="password" name="password" class="password input-reg" placeholder="Confirmar contraseña" required>
             <span class="feedback"></span>
 
             <div id="buttons">
