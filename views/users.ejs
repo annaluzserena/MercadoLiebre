@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head") %>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre | Usuarios</title>
+</head>
+
+<body>
+    
+    <%- include("./partials/header") %>
+
+    <main>
+
+        <h3>Usuarios del sitio</h3>
+
+        <section>
+
+            <% for (let i = 0; i < users.length; i++) { %>
+
+            <article>
+                <div class="contenedor-imagen">
+                    <img src="/img/<%= users[i].image %>" alt="<%= users[i].name %>" class="imagen">
+                </div>
+                <div>
+                    <i class="fas fa-truck verde"></i>
+                    <div class="precio-descuento">
+                        <p class="precio"><%= users[i].price %> años</p>
+                        <p class="verde descuento"><%= users[i].discount %> <%= users[i].description == "Comprador"? "Compras": "Ventas" %></p>
+                    </div>
+                    <p class="descripcion"><%= users[i].name %></p>
+                </div>
+            </article>
+
+            <% } %>
+
+        </section>
+
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+
+</html>

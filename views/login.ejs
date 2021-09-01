@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head") %>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Mercado Liebre - Login</title>
+</head>
+
+<body>
+    
+    <%- include("./partials/header") %>
+
+    <main>
+        <form id="ingresar">
+        <h3>Ingresá</h3>
+
+            <label for="usuario"></label>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+            <span class="feedback"></span>
+
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            <span class="feedback"></span>
+
+            <button type="submit"><a href="/">Enviar</a></button>
+        </form>
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+
+</html>

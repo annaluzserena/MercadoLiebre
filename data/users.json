@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Marta González",
+        "description": "Comprador",
+        "price": 27,
+        "discount": 40,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Carla Lopez",
+        "description": "Vendedor",
+        "price": 35,
+        "discount": 15,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Tomás Loredo",
+        "description": "Vendedor",
+        "price": 22,
+        "discount": 4,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Lucas Díaz",
+        "description": "Comprador",
+        "price": 51,
+        "discount": 21,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Ada",
+        "description": "Admin",
+        "price": 29,
+        "discount": 0,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Greta",
+        "description": "Admin",
+        "price": 41,
+        "discount": 0,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Vim",
+        "description": "Admin",
+        "price": 32,
+        "discount": 0,
+        "image": "user-default.jpg"
+    },
+    {
+        "name": "Tim",
+        "description": "Admin",
+        "price": 24,
+        "discount": 0,
+        "image": "user-default.jpg"
+    }
+]

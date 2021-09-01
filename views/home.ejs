@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head") %>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre</title>
+</head>
+
+<body>
+    
+    <%- include("./partials/header") %>
+
+    <img src="/img/img-home-banner.jpg" alt="Home banner" id="banner">
+
+    <main>
+
+        <h3>Basado en tu última visita</h3>
+
+        <section>
+
+            <% for (let i = 0; i < products.length; i++) { %>
+
+            <article>
+                <div class="contenedor-imagen">
+                    <img src="/img/<%= products[i].image %>" alt="<%= products[i].name %>" class="imagen">
+                </div>
+                <div>
+                    <i class="fas fa-truck verde"></i>
+                    <div class="precio-descuento">
+                        <p class="precio">$<%= products[i].price %></p>
+                        <p class="verde descuento"><%= products[i].discount %>% off</p>
+                    </div>
+                    <p class="descripcion"><%= products[i].name %></p>
+                </div>
+            </article>
+
+            <% } %>
+
+        </section>
+
+        <h3>Ofertas</h3>
+
+        <section>
+
+            <% for (let i = 0; i < products.length; i++) { %>
+
+            <article>
+                <div class="contenedor-imagen">
+                    <img src="/img/<%= products[i].image %>" alt="<%= products[i].name %>" class="imagen">
+                </div>
+                <div>
+                    <i class="fas fa-truck verde"></i>
+                    <div class="precio-descuento">
+                        <p class="precio">$<%= products[i].price %></p>
+                        <p class="verde descuento"><%= products[i].discount %>% off</p>
+                    </div>
+                    <p class="descripcion"><%= products[i].name %></p>
+                </div>
+            </article>
+
+            <% } %>
+
+        </section>
+
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+
+</html>

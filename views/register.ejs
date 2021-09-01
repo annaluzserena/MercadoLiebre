@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head") %>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Mercado Liebre - Registro</title>
+</head>
+
+<body>
+    
+    <%- include("./partials/header") %>
+
+    <main>
+        <form id="form-registro">
+            <h3>Creá tu cuenta</h3>
+
+            <label for="nombre" class="label-reg"></label>
+            <input type="text" name="name" id="nombre" class="input-reg" placeholder="Nombre completo" required>
+            <span class="feedback"></span>
+
+            <label for="usuario" class="label-reg"></label>
+            <input type="text" name="user" id="usuario" class="input-reg" placeholder="Usuario" required>
+            <span class="feedback"></span>
+
+            <label for="email" class="label-reg"></label>
+            <input type="email" name="email" id="email" class="input-reg" placeholder="Email" required>
+            <span class="feedback"></span>
+
+            <label for="birthDate" class="label-reg">Fecha de nacimiento:</label>
+            <input type="date" name="birthDate" id="birthDate" class="input-reg" required>
+            <span class="feedback"></span>
+
+            <label for="domicilio" class="label-reg"></label>
+            <input type="text" name="address" id="domicilio" class="input-reg" placeholder="Domicilio" required>
+            <span class="feedback"></span>
+
+            <label for="perfilUsuario">Perfil del usuario:</label>
+            <div id="perfilUsuario">
+                <div class="radio">
+                    <input type="radio" name="perfilUsuario" class="perfilUsuario input-reg" required>
+                    <p>Comprador</p>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="perfilUsuario" class="perfilUsuario input-reg" required>
+                    <p>Vendedor</p>
+                </div>
+            </div>
+
+            <label for="intereses">Intereses:</label>
+            <div id="intereses">
+                <div class="checkbox">
+                    <input type="checkbox" name="intereses" class="intereses input-reg">
+                    <p>Electro</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="intereses" class="intereses input-reg">
+                    <p>Moda</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="intereses" class="intereses input-reg">
+                    <p>Hogar</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="intereses" class="intereses input-reg">
+                    <p>Juguetería</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="intereses" class="intereses input-reg">
+                    <p>Vida sana</p>
+                </div>
+            </div>
+
+            <label for="fotoUsuario" class="label-reg">Foto de perfil:</label>
+            <input type="file" accept=".jpg, .png" name="userImage" id="fotoUsuario" class="input-reg" required>
+            <span class="feedback"></span>
+
+            <label for="password" class="label-reg"></label>
+            <input type="password" name="password" class="password input-reg" placeholder="Contraseña" required>
+            <span class="feedback"></span>
+            <input type="password" name="password" class="password input-reg" placeholder="Confirmar contraseña" required>
+            <span class="feedback"></span>
+
+            <div id="buttons">
+                <button type="submit" class="button-reg"><a href="/">Enviar</a></button>
+                <button type="reset" class="button-reg">Borrar</button>
+            </div>
+        </form>
+    </main>
+
+    <%- include("./partials/footer") %>
+    
+</body>
+
+</html>
